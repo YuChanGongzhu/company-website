@@ -37,10 +37,10 @@ import huangnannan from '../images/people/huangnannan@2x.png'
 import DrMohammad from '../images/people/Dr.mohammad@2x.png'
 import zhangweiyang from '../images/people/zhangweiyang@2x.png'
 
-import leftArrowGray from '../images/background/左灰箭头.png'
-import rightArrowGray from '../images/background/右灰箭头.png'
-import leftArrowLight from '../images/background/左亮箭头.png'
-import rightArrowLight from '../images/background/右亮箭头.png'
+import leftArrowGray from '../images/background/left_arrow.png'
+import rightArrowGray from '../images/background/right_arrow.png'
+import leftArrowLight from '../images/background/left_arrow_light.png'
+import rightArrowLight from '../images/background/right_arrow_light.png'
 
 export default {
   name: 'TeamMembers',
@@ -135,7 +135,7 @@ export default {
 <style scoped>
 .carousel-container {
   position: relative;
-  padding: 0 50px;
+  padding: 0 100px;
 }
 
 .arrow {
@@ -156,8 +156,8 @@ export default {
 }
 
 .arrow img {
-  width: 40px;
-  height: 40px;
+  width: 80px;
+  height: 80px;
   transition: transform 0.3s ease;
 }
 

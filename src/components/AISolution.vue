@@ -33,9 +33,9 @@
             <div class="col-md-8">
               <p style="color: #ffffff;">Case introduction</p>
               <p style="color: #ffffff;margin-bottom: 50px;">The GTorque Game Guide Assistant uses image recognition and computer vision technology to provide users with game guides and tips. The system can identify key scenes and tasks in games, helping players better understand and navigate the game, thereby enhancing their gaming experience. By improving user engagement and satisfaction, this project has significantly increased the company's competitiveness in the gaming market.</p>
-              <a href="#" class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Image recognitiion</a>
-              <a href="#" class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Computer vision</a>
-              <a href="#" class="mb-4" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Game Guide guidance</a>
+              <a  class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Image recognitiion</a>
+              <a  class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Computer vision</a>
+              <a  class="mb-4" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Game Guide guidance</a>
             </div>
           </div>
           <div class="col-md-8 text-left mb-5 solu_item6" style="display: none;">
@@ -151,5 +151,10 @@ export default {
 .solu_ban {
   background-image: url(../images/solu_ban1.png);
   background-size: 100% 100%;
+}
+
+.col-md-8 p {
+  font-size:20px;
+  line-height: 1.4;
 }
 </style> 

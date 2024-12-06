@@ -2,11 +2,11 @@
   <div id="business">
     <div class="container text-center pt-5 mt-3">
       <h1 class="font-weight-bold">BUSINESS</h1>
-      <p style="color: #79808A;">Our main business is divided into three aspects: firstly, customized software, tailoring software solutions according to specific customer needs; Secondly, AI solutions provide comprehensive AI solutions; Thirdly, information technology upgrade to assist customers in comprehensive information technology upgrade</p>
+      <p style="color: #79808A; font-size: 22px;">Our main business is divided into three aspects: firstly, customized software, tailoring software solutions according to specific customer needs; Secondly, AI solutions provide comprehensive AI solutions; Thirdly, information technology upgrade to assist customers in comprehensive information technology upgrade</p>
       <div class="row mt-5 mb-5 business_btn">
-        <a class="col-4 text-center font-weight-bold pb-3 business_btn1" href="javascript:;" style="font-size: 18px; line-height: 18px; padding-top: 5px;">Customized software</a>
-        <a class="col-4 text-center font-weight-bold pb-3 business_btn2 active" href="javascript:;" style="font-size: 26px; line-height: 26px; padding-bottom: 5px;">AI solution</a>
-        <a class="col-4 text-center font-weight-bold pb-3 business_btn3" href="javascript:;" style="font-size: 14px; line-height: 14px; padding-top: 10px;">Informatization upgrade</a>
+        <a class="col-4 text-center font-weight-bold pb-3 business_btn1" href="javascript:;" style="font-size: 20px; line-height: 20px; padding-top: 5px;">Customized software</a>
+        <a class="col-4 text-center font-weight-bold pb-3 business_btn2 active" href="javascript:;" style="font-size: 28px; line-height: 28px; padding-bottom: 5px;">AI solution</a>
+        <a class="col-4 text-center font-weight-bold pb-3 business_btn3" href="javascript:;" style="font-size: 16px; line-height: 16px; padding-top: 10px;">Informatization upgrade</a>
       </div>
       <div class="row business_item1" style="display: none;">
         <div class="col-md-6">
@@ -94,5 +94,15 @@ export default {
 .business_btn a.active {
   border-bottom: 2px solid rgb(74, 108, 247);
   color: #3860D2;
+}
+
+.col-md-6 p {
+  font-size: 20px;
+  line-height: 1.3;
+}
+
+.col-md-6 h1 {
+  font-size: 32px;
+  line-height: 1.2;
 }
 </style> 
