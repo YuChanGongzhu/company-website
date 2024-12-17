@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <div class="container-fluid">
-      <div class="container-fluid d-none d-md-block" style="padding-bottom: 50px; background-image:url('public/images/banner.png'); background-size: 100% 100%;">
+      <div class="container-fluid d-none d-md-block" style="padding-bottom: 50px; background-image:url('/src/images/banner.png'); background-size: 100% 100%;">
         <div class="row col-md-10 mx-auto">
           <div class="col-md-12" style="padding: 100px; padding-top: 120px;">
             <div class="typewriter-container">
@@ -16,7 +16,7 @@
           </div>
         </div>
       </div>
-      <div class="container-fluid d-block d-md-none" style="padding-bottom: 50px;padding-bottom: 50px; background-image:url('public/images/banner.png'); background-size: cover;">
+      <div class="container-fluid d-block d-md-none" style="padding-bottom: 50px;padding-bottom: 50px; background-image:url('/src/images/banner.png'); background-size: cover;">
         <div class="row col-md-10 mx-auto">
           <div class="col-md-6" style="padding: 30px;">
             <p style="background-color: #3860d2;display: inline-block;padding: 10px;border-radius: 30px;font-weight: bold;color: #fff;"><span style="color: #FFF;margin: 0 5px;">●</span>THREE YEARS TO SHARPEN SWORD</p>

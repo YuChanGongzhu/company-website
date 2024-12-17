@@ -131,7 +131,7 @@ export default {
       document.querySelector('.solu_item4').style.display = 'none';
       document.querySelector('.solu_item5').style.display = 'none';
       document.querySelector('.solu_item6').style.display = 'flex';
-      document.querySelector('.solu_ban').style.backgroundImage = 'url(src/images/solu_ban6.png)';
+      document.querySelector('.solu_ban').style.backgroundImage = 'url(/src/images/solu_ban6.png)';
     }
   }
 }
