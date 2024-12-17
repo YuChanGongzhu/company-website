@@ -14,7 +14,7 @@
         </div>
         <div class="col-md-6 pt-5 text-left">
           <h1>PC、Mobile、Web<br>application development</h1>
-          <p style="color: #79808A;">PC application development include <span style="color: #3860D2;"> Customer RelationshipManagement Systems、Enterprise Resource Planning SystemsData Visualization Tools and Customized WorkflowManagement Systems</span></p>
+          <p style="color: #79808A;">PC application development include <span style="color: #3860D2;"> Customer Relationship Management Systems、Enterprise Resource Planning Systems、Data Visualization Tools and Customized WorkflowManagement Systems</span></p>
           <p style="color: #79808A;">Mobile application development Profcient in using <span style="color: #3860D2;"> programming languages and frameworks such as Swift, KotlinJava, React Native,</span> and Flutter, we develop high-performanceiOS and Android applications.Our expertise spans <span style="color: #3860D2;"> e-commerce applications, social media applications, mobile ofhceapplications, health monitoring applications,</span> and customizedenterprise applications, Through intuitive user interface design.innovative interaction experiences,optimized performancetuning,and cross-platform compatibility.</p>
           <p style="color: #79808A;">Web application development covers web applicationdevelopment, providing efhcient, stable, and user-friendly webapplication solutions tailored to the specifc business needs oiour clients.We possess a comprehensive technology stack todeliver these solutions.</p>
           <p style="color: #79808A;"><span style="color: #3860D2;">HTML CSS JavaScript TypeScript Java(SpringBoot) Python(Django Flask) Node.is React AngularVue.is Content management system,e-commerceplatform, single page application, enterprise portal, datavisualization platform.</span></p>
@@ -29,7 +29,7 @@
         <div class="col-md-6 pt-5 text-left">
           <h1>Provide comprehensive AI solutions</h1>
           <p style="color: #79808A;">AI solutions include three categories: data analysis application development, machine learning application development, and big language model application development.</p>
-          <p style="color: #79808A;">Data analysis applications involves developing data analysis applications that utilize various technologies such as <span style="color: #3860D2;">descriptive analysis, diagnostic analysis, predictive analysis, and prescriptive analysis </span>  to provide comprehensive data-driven solutions tailored to customers' specific business needs.</p>
+          <p style="color: #79808A;">Data analysis applications involves developing data analysis applications that utilize various technologies such as <span style="color: #3860D2;">descriptive analytics, diagnostic analytics, predictive analytics, and prescriptive analytics </span>  to provide comprehensive data-driven solutions tailored to customers' specific business needs.</p>
           <p style="color: #79808A;">Machine learning applications covers the development of machine learning applications and utilizes various technologies, including <span style="color: #3860D2;"> supervised learning, unsupervised learning, semi-supervised learning, and reinforcement learning.</span> </p>
           <p style="color: #79808A;">Large Language Model Applications covers the development of machine learning applications and utilizes various technologies, including supervised learning, unsupervised learning, semi-supervised learning, and reinforcement learning. </p>
         </div>

@@ -12,7 +12,7 @@
               </h1>
             </div>
             <p style="background-color: #3860d2;display: inline-block;padding: 10px;border-radius: 30px;font-weight: bold;color: #fff;"><span style="color: #FFF;margin: 0 5px;">●</span>THREE YEARS TO SHARPEN SWORD</p>
-            <p style="text-align: justify;color: #79808A;">hope to become a company that can change the world.</p>
+            <p style="text-align: justify;color: #79808A;">from a sustainable company into a world-changing force.</p>
           </div>
         </div>
       </div>

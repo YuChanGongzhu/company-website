@@ -35,7 +35,7 @@
               <p style="color: #ffffff;margin-bottom: 50px;">The GTorque Game Guide Assistant uses image recognition and computer vision technology to provide users with game guides and tips. The system can identify key scenes and tasks in games, helping players better understand and navigate the game, thereby enhancing their gaming experience. By improving user engagement and satisfaction, this project has significantly increased the company's competitiveness in the gaming market.</p>
               <a  class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Image recognitiion</a>
               <a  class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Computer vision</a>
-              <a  class="mb-4" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Game Guide guidance</a>
+              <a  class="mb-4" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Guidance for Game</a>
             </div>
           </div>
           <div class="col-md-8 text-left mb-5 solu_item6" style="display: none;">
