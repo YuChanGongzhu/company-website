@@ -1,7 +1,7 @@
 <template>
   <div id="home">
     <div class="container-fluid">
-      <div class="container-fluid d-none d-md-block" style="padding-bottom: 50px; background-image:url('src/images/banner背景.png'); background-size: 100% 100%;">
+      <div class="container-fluid d-none d-md-block" style="padding-bottom: 50px; background-image:url('public/images/banner.png'); background-size: 100% 100%;">
         <div class="row col-md-10 mx-auto">
           <div class="col-md-12" style="padding: 100px; padding-top: 120px;">
             <div class="typewriter-container">
