@@ -4,18 +4,19 @@
       <h1 class="font-weight-bold">TEAM MEMBERS</h1>
       <p style="color: #79808A;">Our team members come from various prestigious universities and have rich project
         experience</p>
-      <div class="carousel-container position-relative">
+      <div class="carousel-container position-relative" @mouseenter="handleMouseEnter" @mouseleave="handleMouseLeave">
         <!-- 左箭头 -->
         <div class="arrow left-arrow" @click="prevPage" @mouseenter="leftArrowHovered = true"
           @mouseleave="leftArrowHovered = false">
           <img :src="leftArrowHovered ? leftArrowLight : leftArrowGray" alt="Previous">
         </div>
 
-        <!-- 卡片容器 -->
-        <div class="row mt-5 mb-5 mx-auto">
-          <CharacterCard v-for="member in displayedMembers" :key="member.name" :pic="member.pic" :name="member.name"
-            :introduction="member.introduction" :description="member.description"
-            @toggle-description="handleToggleDescription" :ref="el => { if (el) cardRefs[member.name] = el }" />
+        <div class="cards-wrapper">
+          <div class="cards-slider" :style="sliderStyle">
+            <CharacterCard v-for="member in teamMembers" :key="member.name" :pic="member.pic" :name="member.name"
+              :introduction="member.introduction" :description="member.description"
+              @toggle-description="handleToggleDescription" :ref="el => { if (el) cardRefs[member.name] = el }" />
+          </div>
         </div>
 
         <!-- 右箭头 -->
@@ -50,7 +51,7 @@ export default {
   data() {
     return {
       cardRefs: {},
-      currentPage: 0,
+      currentIndex: 0,
       itemsPerPage: 3,
       leftArrowHovered: false,
       rightArrowHovered: false,
@@ -59,12 +60,12 @@ export default {
       leftArrowLight,
       rightArrowLight,
       teamMembers: [
-        {
-          pic: wanghongqing,
-          name: 'Wang Hongqing',
-          introduction: 'AI Large Language Model Technical Expert\nAlgorithm Engineer (Alibaba Group and Geely Group)\nEnterprise AI Solution Provider',
-          description: 'JUN KIT CHAW(Chief AI Technology Consultant)\nWong Hongqing (Artificial Intelligence, Large Language Model Technical Expert)\nResearch Fellow at the Institute of Visual Informatics, Universiti Kebangsaan Malaysia.\nAs an HRDF Corp accredited trainer, he teaches courses on Python, Power BI, and Tableau. His main research interests include computer vision and deep learning. With extensive corporate collaboration and consulting experiences, he actively partners with industry leaders like Advantest and HILTI Asia IT Services, contributing to projects on manufacturing process optimization and computer vision applications.'
-        },
+        // {
+        //   pic: wanghongqing,
+        //   name: 'Wang Hongqing',
+        //   introduction: 'AI Large Language Model Technical Expert\nAlgorithm Engineer (Alibaba Group and Geely Group)\nEnterprise AI Solution Provider',
+        //   description: 'JUN KIT CHAW(Chief AI Technology Consultant)\nWong Hongqing (Artificial Intelligence, Large Language Model Technical Expert)\nResearch Fellow at the Institute of Visual Informatics, Universiti Kebangsaan Malaysia.\nAs an HRDF Corp accredited trainer, he teaches courses on Python, Power BI, and Tableau. His main research interests include computer vision and deep learning. With extensive corporate collaboration and consulting experiences, he actively partners with industry leaders like Advantest and HILTI Asia IT Services, contributing to projects on manufacturing process optimization and computer vision applications.'
+        // },
         {
           pic: junkitchaw,
           name: 'JUN KIT CHAW',
@@ -95,16 +96,25 @@ export default {
           introduction: 'International Partner and Technical Supply Chain Director\nSuccessfully led multiple AI technology projects with a focus on implementation and efficiency.\nSuccessfully led multiple AI technology projects with a focus on implementation and efficiency.',
           description: 'Zhang Weiyang possesses extensive expertise in artificial intelligence,\nwith years of experience leading AI projects.\nHe specializes in deep learning and natural language processing,\ndelivering innovative solutions and technical support to his teams.\nWith a strong command of supply chain management,\nhe drives global operational excellence and fosters technological innovation in enterprise solutions.'
         },
-      ]
+      ],
+      wheelTimeout: null,
+      isMouseInCarousel: false
     }
   },
   computed: {
     displayedMembers() {
-      const start = this.currentPage * this.itemsPerPage
-      return this.teamMembers.slice(start, start + this.itemsPerPage)
+      return this.teamMembers.slice(this.currentIndex, this.currentIndex + this.itemsPerPage)
     },
-    totalPages() {
-      return Math.ceil(this.teamMembers.length / this.itemsPerPage)
+    canGoNext() {
+      return this.currentIndex + 3 < this.teamMembers.length
+    },
+    canGoPrev() {
+      return this.currentIndex > 0
+    },
+    sliderStyle() {
+      return {
+        transform: `translateX(${-this.currentIndex * (100/5)}%)` //调整人物卡片数量
+      }
     }
   },
   methods: {
@@ -116,18 +126,48 @@ export default {
       })
     },
     prevPage() {
-      if (this.currentPage > 0) {
-        this.currentPage--
+      if (this.canGoPrev) {
+        this.currentIndex--
       }
     },
     nextPage() {
-      if (this.currentPage < this.totalPages - 1) {
-        this.currentPage++
+      if (this.canGoNext) {
+        this.currentIndex++
       }
+    },
+    handleWheel(event) {
+      if (this.isMouseInCarousel) {
+        event.preventDefault()
+        
+        if (this.wheelTimeout) {
+          return
+        }
+        
+        this.wheelTimeout = setTimeout(() => {
+          this.wheelTimeout = null
+        }, 300)
+        
+        if (event.deltaY > 0 && this.canGoNext) {
+          this.nextPage()
+        }
+        else if (event.deltaY < 0 && this.canGoPrev) {
+          this.prevPage()
+        }
+      }
+    },
+    handleMouseEnter() {
+      this.isMouseInCarousel = true
+    },
+    handleMouseLeave() {
+      this.isMouseInCarousel = false
     }
+  },
+  mounted() {
+    window.addEventListener('wheel', this.handleWheel, { passive: false })
   },
   beforeUnmount() {
     this.cardRefs = {}
+    window.removeEventListener('wheel', this.handleWheel)
   }
 }
 </script>
@@ -136,6 +176,28 @@ export default {
 .carousel-container {
   position: relative;
   padding: 0 100px;
+  overflow: hidden;
+}
+
+.cards-wrapper {
+  overflow: hidden;
+  margin: 0 -15px;
+}
+
+.cards-slider {
+  display: flex;
+  transition: transform 0.5s ease;
+  width: 167%; 
+  /* 调整人物卡片数量 */
+}
+
+/* 调整卡片样式 */
+:deep(.col-md-4) {
+  /* 调整人物卡片数量 */
+  flex: 0 0 calc(100% / 5);
+  max-width: calc(100% / 5);
+  padding: 0 15px;
+  transition: all 0.5s ease;
 }
 
 .arrow {

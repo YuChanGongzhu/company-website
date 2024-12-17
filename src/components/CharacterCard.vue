@@ -81,8 +81,8 @@ export default {
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    height: 500px;
-    width: 300px;
+    height: 600px;
+    width: 280px;
     display: flex;
     flex-direction: column;
     position: relative;
@@ -155,7 +155,7 @@ export default {
     background: #4169E1;
     color: white;
     border: none;
-    padding: 23px 20px;
+    padding: 15px 12px;
     border-radius: 0;
     cursor: pointer;
     transition: background-color 0.3s ease;
