@@ -2,7 +2,7 @@
   <div class="text-center pt-5 mt-3">
     <h1>AI SOLUTION</h1>
     <h3 class="mt-5 mb-5">PROVIDE COMPREHENSIVE AI SOLUTIONS</h3>
-    <div class="solu_ban" style="width: 100%;padding: 80px 0;">
+    <div class="solu_ban" :class="currentBannerClass" style="width: 100%;padding: 80px 0;">
       <div class="container col-md-9 pt-5 pb-5">
         <div class="row solution_item1">
           <div class="col-md-8 text-left mb-5 solu_item1">
@@ -63,6 +63,11 @@
 <script>
 export default {
   name: 'AISolution',
+  data() {
+    return {
+      currentBannerClass: 'banner-1'
+    }
+  },
   mounted() {
     const solution_btn = document.querySelectorAll('.solution_btn li');
     solution_btn.forEach(li => {
@@ -79,59 +84,64 @@ export default {
     var solu_btn5 = document.querySelector('.solu_btn5');
     var solu_btn6 = document.querySelector('.solu_btn6');
 
-    solu_btn1.onclick = function() {
+    solu_btn1.onclick = () => {
       document.querySelector('.solu_item1').style.display = 'flex';
       document.querySelector('.solu_item2').style.display = 'none';
       document.querySelector('.solu_item3').style.display = 'none';
       document.querySelector('.solu_item4').style.display = 'none';
       document.querySelector('.solu_item5').style.display = 'none';
       document.querySelector('.solu_item6').style.display = 'none';
-      document.querySelector('.solu_ban').style.backgroundImage = 'url(src/images/solu_ban1.png)';
+      this.currentBannerClass = 'banner-1';
     }
-    solu_btn2.onclick = function() {
+    
+    solu_btn2.onclick = () => {
       document.querySelector('.solu_item1').style.display = 'none';
       document.querySelector('.solu_item2').style.display = 'flex';
       document.querySelector('.solu_item3').style.display = 'none';
       document.querySelector('.solu_item4').style.display = 'none';
       document.querySelector('.solu_item5').style.display = 'none';
       document.querySelector('.solu_item6').style.display = 'none';
-      document.querySelector('.solu_ban').style.backgroundImage = 'url(src/images/solu_ban2.png)';
+      this.currentBannerClass = 'banner-2';
     }
-    solu_btn3.onclick = function() {
+    
+    solu_btn3.onclick = () => {
       document.querySelector('.solu_item1').style.display = 'none';
       document.querySelector('.solu_item2').style.display = 'none';
       document.querySelector('.solu_item3').style.display = 'flex';
       document.querySelector('.solu_item4').style.display = 'none';
       document.querySelector('.solu_item5').style.display = 'none';
       document.querySelector('.solu_item6').style.display = 'none';
-      document.querySelector('.solu_ban').style.backgroundImage = 'url(src/images/solu_ban3.png)';
+      this.currentBannerClass = 'banner-3';
     }
-    solu_btn4.onclick = function() {
+    
+    solu_btn4.onclick = () => {
       document.querySelector('.solu_item1').style.display = 'none';
       document.querySelector('.solu_item2').style.display = 'none';
       document.querySelector('.solu_item3').style.display = 'none';
       document.querySelector('.solu_item4').style.display = 'flex';
       document.querySelector('.solu_item5').style.display = 'none';
       document.querySelector('.solu_item6').style.display = 'none';
-      document.querySelector('.solu_ban').style.backgroundImage = 'url(src/images/solu_ban4.png)';
+      this.currentBannerClass = 'banner-4';
     }
-    solu_btn5.onclick = function() {
+    
+    solu_btn5.onclick = () => {
       document.querySelector('.solu_item1').style.display = 'none';
       document.querySelector('.solu_item2').style.display = 'none';
       document.querySelector('.solu_item3').style.display = 'none';
       document.querySelector('.solu_item4').style.display = 'none';
       document.querySelector('.solu_item5').style.display = 'flex';
       document.querySelector('.solu_item6').style.display = 'none';
-      document.querySelector('.solu_ban').style.backgroundImage = 'url(src/images/solu_ban5.png)';
+      this.currentBannerClass = 'banner-5';
     }
-    solu_btn6.onclick = function() {
+    
+    solu_btn6.onclick = () => {
       document.querySelector('.solu_item1').style.display = 'none';
       document.querySelector('.solu_item2').style.display = 'none';
       document.querySelector('.solu_item3').style.display = 'none';
       document.querySelector('.solu_item4').style.display = 'none';
       document.querySelector('.solu_item5').style.display = 'none';
       document.querySelector('.solu_item6').style.display = 'flex';
-      document.querySelector('.solu_ban').style.backgroundImage = 'url(/src/images/solu_ban6.png)';
+      this.currentBannerClass = 'banner-6';
     }
   }
 }
@@ -149,8 +159,31 @@ export default {
   background-color: #b5c2e8;
 }
 .solu_ban {
-  background-image: url(../images/solu_ban1.png);
   background-size: 100% 100%;
+}
+
+.banner-1 {
+  background-image: url(../images/solu_ban1.png);
+}
+
+.banner-2 {
+  background-image: url(../images/solu_ban2.png);
+}
+
+.banner-3 {
+  background-image: url(../images/solu_ban3.png);
+}
+
+.banner-4 {
+  background-image: url(../images/solu_ban4.png);
+}
+
+.banner-5 {
+  background-image: url(../images/solu_ban5.png);
+}
+
+.banner-6 {
+  background-image: url(../images/solu_ban6.png);
 }
 
 .col-md-8 p {
