@@ -12,10 +12,10 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-4 text-left giegie">
-                <li class="fade-in" style="background-image: url(src/images/inventory.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">INVENTORY MANAGEMENT</li>
-                <li class="fade-in" style="background-image: url(src/images/order.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">ORDER PROCESSING</li>
-                <li class="fade-in" style="background-image: url(src/images/logistics.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">LOGISTICS TRACKING</li>
-                <li class="fade-in" style="background-image: url(src/images/automated.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">AUTOMATED OPERATIONS</li>
+                <ul class="fade-in" style="background-image: url(src/images/inventory.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">INVENTORY MANAGEMENT</ul>
+                <ul class="fade-in" style="background-image: url(src/images/order.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">ORDER PROCESSING</ul>
+                <ul class="fade-in" style="background-image: url(src/images/logistics.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">LOGISTICS TRACKING</ul>
+                <ul class="fade-in" style="background-image: url(src/images/automated.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">AUTOMATED OPERATIONS</ul>
               </div>
               <div class="col-8">
                 <img style="width: 100%;" src="../images/inf_right.jpg" alt="">
