@@ -12,15 +12,19 @@
           <div class="carousel-item">
             <div class="row">
               <div class="col-4 text-left giegie">
-                <ul class="fade-in" style="background-image: url(src/images/inventory.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">INVENTORY MANAGEMENT</ul>
-                <ul class="fade-in" style="background-image: url(src/images/order.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">ORDER PROCESSING</ul>
-                <ul class="fade-in" style="background-image: url(src/images/logistics.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">LOGISTICS TRACKING</ul>
-                <ul class="fade-in" style="background-image: url(src/images/automated.png);background-size: 100% 100%;padding:30px 20px;width: 100%;color: #3860D2;">AUTOMATED OPERATIONS</ul>
+                <ul class="fade-in inventory-bg">INVENTORY MANAGEMENT</ul>
+                <ul class="fade-in order-bg">ORDER PROCESSING</ul>
+                <ul class="fade-in logistics-bg">LOGISTICS TRACKING</ul>
+                <ul class="fade-in automated-bg">AUTOMATED OPERATIONS</ul>
               </div>
               <div class="col-8">
-                <img style="width: 100%;" src="../images/inf_right.jpg" alt="">
-                <p class="mt-2 col-md-7 ml-auto text-left cl" style="color: #79808A;margin-top: 10px;">The customized WMS (Warehouse Management System) has replaced traditional manual recording and outdated SaaS systems, achieving a <span style="color: #3860D2;">100%</span> improvement in business process efficiency.</p>
-                <p class="mt-2 col-md-7 ml-auto text-left cr" style="color: #79808A;margin-top: 10px;">The integrated inventory management, order processing, and logistics tracking features of the system provide <span style="color: #3860D2;">real-time data monitoring</span> and automated operations.It reduces human errors and greatly improves overall operational efficiency.</p>
+                <div class="right-content">
+                  <img src="../images/inf_right.jpg" alt="">
+                  <div class="text-content">
+                    <p class="description">The customized WMS (Warehouse Management System) has replaced traditional manual recording and outdated SaaS systems, achieving a <span style="color: #3860D2;">100%</span> improvement in business process efficiency.</p>
+                    <p class="description">The integrated inventory management, order processing, and logistics tracking features of the system provide <span style="color: #3860D2;">real-time data monitoring</span> and automated operations.It reduces human errors and greatly improves overall operational efficiency.</p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -92,6 +96,57 @@ export default {
   }
   .carousel-inner {
     height: 750px;
+  }
+}
+
+.fade-in {
+  padding: 30px 20px;
+  width: 100%;
+  color: #3860D2;
+  background-size: 100% 100%;
+}
+
+.inventory-bg {
+  background-image: url(../images/inventory.png);
+}
+
+.order-bg {
+  background-image: url(../images/order.png);
+}
+
+.logistics-bg {
+  background-image: url(../images/logistics.png);
+}
+
+.automated-bg {
+  background-image: url(../images/automated.png);
+}
+
+.right-content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.right-content img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.text-content {
+  width: 100%;
+}
+
+.description {
+  color: #79808A;
+  margin-top: 10px;
+  text-align: left;
+  line-height: 40px;
+}
+
+@media (max-width: 768px) {
+  .description {
+    line-height: 30px;
   }
 }
 </style> 
