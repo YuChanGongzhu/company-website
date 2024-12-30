@@ -52,7 +52,7 @@ export default {
     return {
       cardRefs: {},
       currentIndex: 0,
-      itemsPerPage: 3,
+      itemsPerPage: window.innerWidth < 768 ? 1 : 3,
       leftArrowHovered: false,
       rightArrowHovered: false,
       leftArrowGray,
@@ -106,14 +106,15 @@ export default {
       return this.teamMembers.slice(this.currentIndex, this.currentIndex + this.itemsPerPage)
     },
     canGoNext() {
-      return this.currentIndex + 3 < this.teamMembers.length
+      return this.currentIndex + this.itemsPerPage < this.teamMembers.length
     },
     canGoPrev() {
       return this.currentIndex > 0
     },
     sliderStyle() {
+      const cardWidth = window.innerWidth < 768 ? 100 : (100/5)
       return {
-        transform: `translateX(${-this.currentIndex * (100/5)}%)` //调整人物卡片数量
+        transform: `translateX(${-this.currentIndex * cardWidth}%)`
       }
     }
   },
@@ -160,14 +161,24 @@ export default {
     },
     handleMouseLeave() {
       this.isMouseInCarousel = false
+    },
+    handleResize() {
+      this.itemsPerPage = window.innerWidth < 768 ? 1 : 3
+      // Reset currentIndex if it's out of bounds after resize
+      if (this.currentIndex + this.itemsPerPage > this.teamMembers.length) {
+        this.currentIndex = Math.max(0, this.teamMembers.length - this.itemsPerPage)
+      }
     }
   },
   mounted() {
     window.addEventListener('wheel', this.handleWheel, { passive: false })
+    window.addEventListener('resize', this.handleResize)
+    this.handleResize()
   },
   beforeUnmount() {
     this.cardRefs = {}
     window.removeEventListener('wheel', this.handleWheel)
+    window.removeEventListener('resize', this.handleResize)
   }
 }
 </script>
@@ -179,6 +190,12 @@ export default {
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 0 50px;
+  }
+}
+
 .cards-wrapper {
   overflow: hidden;
   margin: 0 -15px;
@@ -187,17 +204,28 @@ export default {
 .cards-slider {
   display: flex;
   transition: transform 0.5s ease;
-  width: 167%; 
-  /* 调整人物卡片数量 */
+  width: 167%;
+}
+
+@media (max-width: 768px) {
+  .cards-slider {
+    width: 100%;
+  }
 }
 
 /* 调整卡片样式 */
 :deep(.col-md-4) {
-  /* 调整人物卡片数量 */
   flex: 0 0 calc(100% / 5);
   max-width: calc(100% / 5);
   padding: 0 15px;
   transition: all 0.5s ease;
+}
+
+@media (max-width: 768px) {
+  :deep(.col-md-4) {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
 
 .arrow {

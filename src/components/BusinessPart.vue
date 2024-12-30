@@ -9,10 +9,10 @@
         <a class="col-4 text-center font-weight-bold pb-3 business_btn3" href="javascript:;" style="font-size: 16px; line-height: 16px; padding-top: 10px;">Informatization upgrade</a>
       </div>
       <div class="row business_item1" style="display: none;">
-        <div class="col-md-6">
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
           <img style="width: 100%;" src="../images/about_left1.jpg" alt="">
         </div>
-        <div class="col-md-6 pt-5 text-left">
+        <div class="col-md-6 pt-5 text-left d-flex flex-column justify-content-center">
           <h1>PC、Mobile、Web<br>application development</h1>
           <p style="color: #79808A;">PC application development include <span style="color: #3860D2;"> Customer Relationship Management Systems、Enterprise Resource Planning Systems、Data Visualization Tools and Customized WorkflowManagement Systems</span></p>
           <p style="color: #79808A;">Mobile application development Profcient in using <span style="color: #3860D2;"> programming languages and frameworks such as Swift, KotlinJava, React Native,</span> and Flutter, we develop high-performanceiOS and Android applications.Our expertise spans <span style="color: #3860D2;"> e-commerce applications, social media applications, mobile ofhceapplications, health monitoring applications,</span> and customizedenterprise applications, Through intuitive user interface design.innovative interaction experiences,optimized performancetuning,and cross-platform compatibility.</p>
@@ -23,10 +23,10 @@
         </div>
       </div>
       <div class="row business_item2">
-        <div class="col-md-6">
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
           <img style="width: 100%;" src="../images/about_left2.jpg" alt="">
         </div>
-        <div class="col-md-6 pt-5 text-left">
+        <div class="col-md-6 pt-5 text-left d-flex flex-column justify-content-center">
           <h1>Provide comprehensive AI solutions</h1>
           <p style="color: #79808A;">AI solutions include three categories: data analysis application development, machine learning application development, and big language model application development.</p>
           <p style="color: #79808A;">Data analysis applications involves developing data analysis applications that utilize various technologies such as <span style="color: #3860D2;">descriptive analytics, diagnostic analytics, predictive analytics, and prescriptive analytics </span>  to provide comprehensive data-driven solutions tailored to customers' specific business needs.</p>
@@ -35,10 +35,10 @@
         </div>
       </div>
       <div class="row business_item3" style="display: none;">
-        <div class="col-md-6">
+        <div class="col-md-6 d-flex align-items-center justify-content-center">
           <img style="width: 100%;" src="../images/about_left3.jpg" alt="">
         </div>
-        <div class="col-md-6 pt-5 text-left">
+        <div class="col-md-6 pt-5 text-left d-flex flex-column justify-content-center">
           <h1>ERP system, CRM systemand SCM system</h1>
           <p style="color: #79808A;">We provide comprehensive information upgrade services,including ERP system, CRM system and SCM system, to helpenterprises achieve digital transformation and improveoperational effciency.</p>
           <p style="color: #79808A;">We provide comprehensive information upgrade services and support <span style="color: #3860D2;"> seamless integration </span> and <span style="color: #3860D2;"> expansion of systems with aflexible architecture. By introducing advanced businessintelligence (Bl) tools,</span> we are able to implement real-time dataanalysis and reporting capabilities to help enterprises maketimely data-driven decisions.In addition. our solutions aredesigned to optimize the allocation and management ofenterprise resources,thereby increasing overall operationaleffciency and enabling overall business improvement andinnovation.</p>
@@ -89,7 +89,7 @@ export default {
   color: #000;
 }
 .business_btn a:hover {
-  border-bottom: 2px solid rgb(74, 108, 247);
+  border-bottom: 2px solid rgb(0, 0, 0);
 }
 .business_btn a.active {
   border-bottom: 2px solid rgb(74, 108, 247);
@@ -105,4 +105,4 @@ export default {
   font-size: 32px;
   line-height: 1.2;
 }
-</style> 
+</style>

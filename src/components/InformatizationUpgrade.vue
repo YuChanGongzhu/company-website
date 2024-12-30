@@ -1,5 +1,5 @@
 <template>
-  <div class="inf_ban" style="width: 100%;padding: 80px 0;">
+  <div class="inf_ban" style="width:80%;padding: 80px 0; margin: 0 auto;">
     <div class="container text-center pt-5 mt-3">
       <h1 class="font-weight-bold">INFORMATIZATION UPGRADE</h1>
       <h3 class="mt-5 mb-5">MEAD JOHNSON MARKETING MANAGEMENT SYSTEM</h3>

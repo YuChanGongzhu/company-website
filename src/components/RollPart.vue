@@ -62,8 +62,8 @@ export default {
 
 .banner-bg {
   padding-bottom: 50px;
-  background-image: url(../images/banner.png);
+  background-image: url(../images/animation.gif);
   background-size: 100% 100%;
 }
 
-</style> 
+</style>

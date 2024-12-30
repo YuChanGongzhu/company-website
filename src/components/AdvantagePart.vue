@@ -1,7 +1,7 @@
 <template>
   <div id="advantages">
-    <div style="width: 100%;background-image: linear-gradient(to right,rgba(90, 174, 223, 0.3),rgb(255,255,255));">
-      <div class="container col-md-9 text-center pt-5">
+    <div style="width: 80%; margin: 0 auto; background-image: linear-gradient(to right,rgba(90, 174, 223, 0.3),rgb(255,255,255));">
+      <div class="container text-center pt-5">
         <h1>ADVANTAGES</h1>
         <p style="color: #79808A;">Our team consists of senior experts and top technical consultants from South China <br> University of Technology, ensuring that we have an edge in technological innovation and <br> business execution.</p>
         <div class="row">
@@ -40,4 +40,4 @@ export default {
 .img-hover:hover {
   transform: scale(1.2);
 }
-</style> 
+</style>

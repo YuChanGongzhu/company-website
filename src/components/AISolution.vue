@@ -2,8 +2,8 @@
   <div class="text-center pt-5 mt-3">
     <h1>AI SOLUTION</h1>
     <h3 class="mt-5 mb-5">PROVIDE COMPREHENSIVE AI SOLUTIONS</h3>
-    <div class="solu_ban" :class="currentBannerClass" style="width: 100%;padding: 80px 0;">
-      <div class="container col-md-9 pt-5 pb-5">
+    <div class="solu_ban" :class="currentBannerClass" style="width: 80%; margin: 0 auto; padding: 80px 0;">
+      <div class="container pt-5 pb-5">
         <div class="row solution_item1">
           <div class="col-md-8 text-left mb-5 solu_item1">
             <div class="col-md-8">
@@ -190,4 +190,4 @@ export default {
   font-size:20px;
   line-height: 1.4;
 }
-</style> 
+</style>
