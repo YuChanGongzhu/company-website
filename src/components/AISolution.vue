@@ -8,40 +8,43 @@
           <div class="col-md-8 text-left mb-5 solu_item1">
             <div class="col-md-8">
               <p style="color: #ffffff;">Case introduction</p>
-              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">The Office Assistant is integrated into the DingTalk platform,offering <span style="color: rgb(202, 202, 105);">intelligent task management, scheduling, and meeting reminders. Utilizing Al technology to automate daily offce tasks, </span>the system enhances work effciency and collaboration. By reducing manual tasks and optimizing schedules, this project significantly boosts employee productivity and minimizes losses due to missed meetings or delayed tasks. Statistics show that since the project's launch, employee work efficiency has increased by 30.33%, and meeting attendance rates have improved by 25.67%.</p>
+              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">The Office Assistant is integrated into the DingTalk platform,offering <span style="color:#C7FF33; font-weight: bold">intelligent task management</span>, scheduling, and meeting reminders. Utilizing <span style="color:#C7FF33; font-weight: bold">Al technology</span> to <span style="color:#C7FF33; font-weight: bold">automate daily offce tasks</span>, the system enhances work effciency and <span style="color:#C7FF33; font-weight: bold">collaboration</span>. By reducing manual tasks and optimizing schedules, this project significantly boosts <span style="color:#C7FF33; font-weight: bold">employee productivity</span> and minimizes losses due to missed meetings or delayed tasks. Statistics show that since the project's launch, employee work efficiency has increased by 30.33%, and meeting attendance rates have improved by 25.67%.</p>
             </div>
           </div>
           <div class="col-md-8 text-left mb-5 solu_item2" style="display: none;">
             <div class="col-md-8">
               <p style="color: #ffffff;">Case introduction</p>
-              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">The Intelligent Fitness provides personalized fitness advice and plans based on user health data. By using Al technology to analyze users' physical conditions and exercise habits, it recommends the most suitable fitness programs, helping users set and achieve their fitness goals. This has signifcantly improved fitness outcomes, with user satisfaction increasing by 40.13% and the number of platform subscribers growing by 20.68%.</p>
+              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">The Intelligent Fitness <span style="color:#C7FF33; font-weight: bold">provides personalized fitness advice</span> and<span style="color:#C7FF33; font-weight: bold"> plans</span> based on user health data. By using Al technology to analyze users' physical conditions and exercise habits, <span style="color:#C7FF33; font-weight: bold">it recommends the most suitable fitness programs</span>, helping users set and achieve their fitness goals. This has signifcantly improved fitness outcomes, with user satisfaction increasing by <span style="color:#C7FF33; font-weight: bold">40.13% </span>and the number of platform subscribers growing by <span style="color:#C7FF33; font-weight: bold">20.68%</span>.</p>
             </div>
           </div>
           <div class="col-md-8 text-left mb-5 solu_item3" style="display: none;">
             <div class="col-md-8">
               <p style="color: #ffffff;">Case introduction</p>
-              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">The Intelligent Fitness provides personalized fitness advice and plans based on user health data. By using Al technology to analyze users' physical conditions and exercise habits, it recommends the most suitable fitness programs, helping users set and achieve their fitness goals. This has signifcantly improved fitness outcomes, with user satisfaction increasing by 40.13% and the number of platform subscribers growing by 20.68%.</p>
+              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">The AI Art Platform uses<span style="color:#C7FF33; font-weight: bold"> AI technology to generate artistic paintings</span>, allowing users to create unique art pieces by inputting descriptions or selecting specific styles. User-generated content has increased by <span style="color:#C7FF33; font-weight: bold">50.68%</span>, and platform user engagement has risen by<span style="color:#C7FF33; font-weight: bold"> 35.31%</span>. The system supports<span style="color:#C7FF33; font-weight: bold"> various painting styles and themes</span>, meeting users' personalized creative needs.
+              </p>
             </div>
           </div>
           <div class="col-md-8 text-left mb-5 solu_item4" style="display: none;">
             <div class="col-md-8">
               <p style="color: #ffffff;">Case introduction</p>
-              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">The GTorque Game Guide Assistant uses image recognition and computer vision technology to provide users with game guides and tips. The system can identify key scenes and tasks in games, helping players better understand and navigate the game, thereby enhancing their gaming experience. By improving user engagement and satisfaction, this project has signifcantly increased the company's competitiveness in the gaming market.</p>
+              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">The AI Door Guardian utilizes <span style="color:#C7FF33; font-weight: bold">advanced facial recognition technology to achieve identity verification</span> and <span style="color:#C7FF33; font-weight: bold">access control</span>. The system is widely used in security monitoring and access control management scenarios, providing efficient security and user experience. This project has successfully improved the efficiency of the company's security management and reduced security costs.
+              </p>
             </div>
           </div>
           <div class="col-md-8 text-left mb-5 solu_item5" style="display: none;">
             <div class="col-md-8">
               <p style="color: #ffffff;">Case introduction</p>
               <p style="color: #ffffff;margin-bottom: 50px;">The GTorque Game Guide Assistant uses image recognition and computer vision technology to provide users with game guides and tips. The system can identify key scenes and tasks in games, helping players better understand and navigate the game, thereby enhancing their gaming experience. By improving user engagement and satisfaction, this project has significantly increased the company's competitiveness in the gaming market.</p>
-              <a  class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Image recognitiion</a>
-              <a  class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Computer vision</a>
-              <a  class="mb-4" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;">Guidance for Game</a>
+              <a  class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;"><span style="color:#C7FF33; font-weight: bold">Image recognitiion</span></a>
+              <a  class="mb-4 mr-3" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;"><span style="color:#C7FF33; font-weight: bold">Computer vision</span></a>
+              <a  class="mb-4" style="display: inline-block;background-color: #8894b7;color: #fff;padding: 5px 20px;border-radius: 10px;"><span style="color:#C7FF33; font-weight: bold">Guidance for Game</span></a>
             </div>
           </div>
           <div class="col-md-8 text-left mb-5 solu_item6" style="display: none;">
             <div class="col-md-8">
               <p style="color: #ffffff;">Case introduction</p>
-              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">The GTorque Game Guide Assistant uses image recognition and computer vision technology to provide users with game guides and tips. The system can identify key scenes and tasks ingames, helping players better understand and navigate the game, thereby enhancing their gaming experience. By improving user engagement and satisfaction, this project has signifcantly increased the company's competitiveness in the gaming market.</p>
+              <p style="color: #ffffff;margin-bottom: 50px;line-height: 30px;">This project aims to implement precision marketing and customer management on the computerized TikTok platform through an automated system. The system automatically collects and downloads video links, <span style="color:#C7FF33; font-weight: bold">captures comment data</span>, and <span style="color:#C7FF33; font-weight: bold">uses AI technology to analyze comments</span> and <span style="color:#C7FF33; font-weight: bold">identify potential leads</span>. It then automatically tracks these leads and sends preset messages to interact effectively with them. Through this automated process, the company's customer conversion rate has increased by approximately<span style="color:#C7FF33; font-weight: bold"> 30%</span>, significantly improving marketing efficiency and competitiveness.
+              </p>
             </div>
           </div>
           <div class="col-md-4 mx-auto">
