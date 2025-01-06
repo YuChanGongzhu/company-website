@@ -2,6 +2,7 @@
   <div id="home">
     <div class="container-fluid">
       <div class="container-fluid d-none d-md-block banner-bg">
+        <video src="../images/banner-move.mov" autoplay muted loop playsinline preload="auto" style="object-fit: fill; image-rendering: -webkit-optimize-contrast;"></video>
         <div class="row col-md-10 mx-auto">
           <div class="col-md-12" style="padding: 100px; padding-top: 120px;">
             <div class="typewriter-container">
@@ -62,8 +63,17 @@ export default {
 
 .banner-bg {
   padding-bottom: 50px;
-  background-image: url(../images/animation.gif);
-  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
 }
 
+.banner-bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  z-index: -1;
+}
 </style>
